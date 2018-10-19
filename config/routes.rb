@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :employers
   get 'pages/home'
 
   get 'pages/about'
