@@ -1,8 +1,13 @@
 <h1>Portfolio Items</h1>
 
+<%= link_to "Create New Item", new_employer_path %>
+
 <% @employer.each do |employer_item| %>
-  <p><%= employer_item.title %></p>
+  <p><%= link_to employer_item.title, employer_path(employer_item.id) %></p>
   <p><%= employer_item.subtitle %></p>
   <p><%= employer_item.body %></p>
   <p><%= image_tag employer_item.thumb_image unless employer_item.thumb_image.nil? %></p>
+  <%= link_to "Edit", edit_employer_path(employer_item.id) %>
+  <td><%= link_to 'Delete', employer_path(employer_item.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
 <% end %>
