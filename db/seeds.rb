@@ -22,7 +22,7 @@ end
 9.times do |employer_item|
   Employer.create!(
     title: "Employer #{employer_item}",
-    subtitle: '',
+    subtitle: 'This is the Remix..',
     body: 'fksdfjsdkljflksdjflksdjfklsdjfklsdjflsdkjflsdfjldsf
     dfdslkfjlskdjflkasdjflksjdflksjdfklasjdflksjdklfjaskldfjlasdjflasdfj
     jdklsfjlaskdjfklasdjflkjsldkfjlaksdjflkasjdfklajsdklfjalsdfjkasdlfjl

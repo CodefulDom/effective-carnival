@@ -1,0 +1,8 @@
+<h1>Portfolio Items</h1>
+
+<% @employer.each do |employer_item| %>
+  <p><%= employer_item.title %></p>
+  <p><%= employer_item.subtitle %></p>
+  <p><%= employer_item.body %></p>
+  <p><%= image_tag employer_item.thumb_image unless employer_item.thumb_image.nil? %></p>
+<% end %>
