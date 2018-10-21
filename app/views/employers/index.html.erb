@@ -3,7 +3,7 @@
 <%= link_to "Create New Item", new_employer_path %>
 
 <% @employer.each do |employer_item| %>
-  <p><%= link_to employer_item.title, employer_path(employer_item.id) %></p>
+  <p><%= link_to employer_item.title, employer_show_path(employer_item.id) %></p>
   <p><%= employer_item.subtitle %></p>
   <p><%= employer_item.body %></p>
   <p><%= image_tag employer_item.thumb_image unless employer_item.thumb_image.nil? %></p>
